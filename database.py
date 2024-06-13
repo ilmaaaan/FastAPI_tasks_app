@@ -3,13 +3,6 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from typing import Optional
 
 
-def fake_answer_to_everything_ml_models(x: float):
-    return x*42
-
-
-
-
-
 
 engine = create_async_engine(
     "sqlite+aiosqlite:///tasks.db"
